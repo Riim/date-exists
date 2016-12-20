@@ -1,0 +1,24 @@
+{
+  "name": "date-exists",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/date-exists.js",
+  "typings": "dist/date-exists.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riim/date-exists.git"
+  },
+  "author": "Dmitry Vibe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riim/date-exists/issues"
+  },
+  "homepage": "https://github.com/Riim/date-exists#readme",
+  "devDependencies": {
+    "typescript": "^2.1.4"
+  }
+}
