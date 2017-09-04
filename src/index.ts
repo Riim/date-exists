@@ -1,8 +1,8 @@
-export default function dateExists(date: string): boolean {
+export function dateExists(date: string): boolean {
 	let match = date.match(/\d+/g);
 
 	if (!match) {
-		return false;
+		throw new SyntaxError('Date must be in format "(d)d.(m)m.(yy)yy"');
 	}
 
 	let day = +match[0];

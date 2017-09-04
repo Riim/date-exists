@@ -1,8 +1,9 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function dateExists(date) {
     var match = date.match(/\d+/g);
     if (!match) {
-        return false;
+        throw new SyntaxError('Date must be in format "(d)d.(m)m.(yy)yy"');
     }
     var day = +match[0];
     var month = +match[1] - 1;
@@ -13,5 +14,4 @@ function dateExists(date) {
     var d = new Date(year, month, day);
     return day == d.getDate() && month == d.getMonth() && year == d.getFullYear();
 }
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = dateExists;
+exports.dateExists = dateExists;

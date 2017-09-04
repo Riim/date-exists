@@ -1,11 +1,11 @@
 {
   "name": "date-exists",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/dateExists.js",
-  "typings": "dist/dateExists.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "rm -rf dist && node_modules/.bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/Riim/date-exists#readme",
   "devDependencies": {
-    "typescript": "^2.1.4"
+    "typescript": "^2.5.2"
   }
 }
